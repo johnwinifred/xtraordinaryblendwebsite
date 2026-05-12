@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const testimonials = [
   {
@@ -28,6 +28,18 @@ const testimonials = [
 ];
 
 const Testimonials: React.FC = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <section className="w-full bg-[#F5F2EC] py-20 px-8">
       <div className="max-w-5xl mx-auto">
@@ -58,16 +70,25 @@ const Testimonials: React.FC = () => {
           ))}
         </div>
 
-        {/* Leave a review link */}
+        {/* Trustpilot Review Collector */}
         <div className="text-center mt-8">
-          <a
-            href="https://g.page/r/CewuNetAGivwEAE/review"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline text-gray-700 hover:text-gray-900 transition-colors"
+          <div
+            className="trustpilot-widget mx-auto"
+            data-locale="en-US"
+            data-template-id="56278e9abfbbba0bdcd568bc"
+            data-businessunit-id="69e0a503ec1e7a6165b1bac9"
+            data-style-height="52px"
+            data-style-width="100%"
+            data-token="38d12686-e440-4797-aeb5-09c3eeb6b995"
           >
-            Leave a review
-          </a>
+            <a
+              href="https://www.trustpilot.com/review/xtraordinaryblend.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Trustpilot
+            </a>
+          </div>
         </div>
       </div>
     </section>
