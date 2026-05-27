@@ -1,14 +1,5 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import xhaftanImage from "./assets/xkhaftan.jfif";
-import xhaftan2Image from "./assets/xhaftan2.jfif";
-import regularImage from "./assets/regular.jfif";
-import capRedImage from "./assets/cap red.jfif";
-import capBlueImage from "./assets/capblue.jfif";
-import VintageImage from "./assets/Vintage2piece.jfif";
-import heritageImage from "./assets/heritage.jfif";
-import heritageLineImage from "./assets/heritage line.jfif";
-import agbadaImage from "./assets/agbada.jpg";
 
 // Vintage Shirt Series
 import vintageShirt1 from "./assets/Vintage shirt1.jpeg";
@@ -96,15 +87,15 @@ const BADGE_STYLES: Record<NonNullable<Badge>, { bg: string; color: string; labe
 
 const PRODUCTS: Product[] = [
   // Existing products
-  { id: 1, name: "Royal Agbada", category: "agbada", price: 0.00, badge: "bestseller", img: agbadaImage },
-  { id: 2, name: "Heritage Isi-agu", category: "traditional", price: 0.00, badge: "new", img: heritageLineImage },
-  { id: 3, name: "Vintage 2-Piece", category: "casual", price: 0.00, badge: "sale", img: regularImage },
-  { id: 4, name: "Vintage 2-Piece Classic", category: "casual", price: 0.00, badge: null, img: VintageImage },
-  { id: 5, name: "Red Igbo Hat (Tonak)", category: "accessories", price: 37.99, badge: null, img: capRedImage, description: "Size - 55cm(21.65 inches) x 3\nSize - 56cm(22.05 inches) x 5\nSize - 57cm(22.44 inches) x 5" },
-  { id: 6, name: "Khaftan 2-Piece", category: "khaftan", price: 0.00, badge: null, img: xhaftanImage },
-  { id: 7, name: "Khaftan 2-Piece Premium", category: "khaftan", price: 0.00, badge: "new", img: xhaftan2Image },
-  { id: 8, name: "Heritage Isi-agu Classic", category: "traditional", price: 0.00, badge: null, img: heritageImage },
-  { id: 9, name: "Blue Igbo Hat (Tonak)", category: "accessories", price: 37.99, badge: null, img: capBlueImage },
+  // { id: 1, name: "Royal Agbada", category: "agbada", price: 0.00, badge: "bestseller", img: agbadaImage },
+  // { id: 2, name: "Heritage Isi-agu", category: "traditional", price: 0.00, badge: "new", img: heritageLineImage },
+  // { id: 3, name: "Vintage 2-Piece", category: "casual", price: 0.00, badge: "sale", img: regularImage },
+  // { id: 4, name: "Vintage 2-Piece Classic", category: "casual", price: 0.00, badge: null, img: VintageImage },
+  // { id: 5, name: "Red Igbo Hat (Tonak)", category: "accessories", price: 37.99, badge: null, img: capRedImage, description: "Size - 55cm(21.65 inches) x 3\nSize - 56cm(22.05 inches) x 5\nSize - 57cm(22.44 inches) x 5" },
+  // { id: 6, name: "Khaftan 2-Piece", category: "khaftan", price: 0.00, badge: null, img: xhaftanImage },
+  // { id: 7, name: "Khaftan 2-Piece Premium", category: "khaftan", price: 0.00, badge: "new", img: xhaftan2Image },
+  // { id: 8, name: "Heritage Isi-agu Classic", category: "traditional", price: 0.00, badge: null, img: heritageImage },
+  // { id: 9, name: "Blue Igbo Hat (Tonak)", category: "accessories", price: 37.99, badge: null, img: capBlueImage },
   
   // Vintage Shirt Series
   { id: 10, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vintageShirt1, detailImg: vintageShirt1_1, description: "LIMITED EDITIONS" },
@@ -227,7 +218,7 @@ const ProductDetailModal: React.FC<{ product: Product; isOpen: boolean; onClose:
         {/* Price */}
         <div style={{ borderTop: "1px solid #ebebeb", paddingTop: "1rem" }}>
           <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "1.5rem", color: "#111", letterSpacing: "0.04em" }}>
-            {product.price !== null ? `£${product.price.toLocaleString()}` : "Custom"}
+            {product.price !== null ? `£${product.price.toFixed(2)}` : "Custom"}
           </span>
         </div>
       </div>
@@ -312,7 +303,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
           <p style={{ fontSize: "0.88rem", fontWeight: 700, color: "#111", lineHeight: 1.3, marginBottom: "0.6rem" }}>{product.name}</p>
           <div className="flex items-center justify-between">
             <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "1.3rem", color: "#111", letterSpacing: "0.04em" }}>
-              {product.price !== null ? `£${product.price.toLocaleString()}` : "Custom"}
+              {product.price !== null ? `£${product.price.toFixed(2)}` : "Custom"}
             </span>
             <a
               href={shopUrl}
