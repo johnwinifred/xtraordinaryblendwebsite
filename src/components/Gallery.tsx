@@ -1,11 +1,11 @@
 import React from "react";
-import heritageLineImage from "../assets/heritage line.jfif";
+import heritageLineImage from "../assets/Vintage shirt 1.1.jpeg";
 import heritageImage from "../assets/heritage.jfif";
 import khaftanImage from "../assets/xhaftan2.jfif";
 // import capBlueImage from "../assets/capblue.jfif";
 // import regularImage from "../assets/regular.jfif";
-import xhaftanImage from "../assets/xkhaftan.jfif";
-import VintageImage from "../assets/Vintage2piece.jfif";
+import xhaftanImage from "../assets/abia cap2.jpeg";
+import VintageImage from "../assets/Vintage shirt 2.jpeg";
 import agbadaImage from "../assets/agbada.jpg";
 
 const Gallery: React.FC = () => {
