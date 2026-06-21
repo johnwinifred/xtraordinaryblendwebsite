@@ -1,20 +1,20 @@
 import React from "react";
-import heritageLineImage from "../assets/Vintage shirt 1.1.jpeg";
+// import heritageLineImage from "../assets/Vintage shirt 1.1.jpeg";
 import heritageImage from "../assets/heritage.jfif";
 import khaftanImage from "../assets/xhaftan2.jfif";
 // import capBlueImage from "../assets/capblue.jfif";
 // import regularImage from "../assets/regular.jfif";
 import xhaftanImage from "../assets/abia cap2.jpeg";
-import VintageImage from "../assets/Vintage shirt 2.jpeg";
+// import VintageImage from "../assets/Vintage shirt 2.jpeg";
 import agbadaImage from "../assets/agbada.jpg";
 
 const Gallery: React.FC = () => {
   const images = [
-    {
-      src: heritageLineImage,
-      alt: "Man in traditional African agbada",
-      tall: true,
-    },
+    // {
+    //   src: heritageLineImage,
+    //   alt: "Man in traditional African agbada",
+    //   tall: true,
+    // },
     {
       src: heritageImage,
       alt: "Man in tailored suit",
@@ -25,11 +25,11 @@ const Gallery: React.FC = () => {
       alt: "Man in red cap",
       tall: false,
     },
-    {
-      src: VintageImage,
-      alt: "Man in blue cap",
-      tall: false,
-    },
+    // {
+    //   src: VintageImage,
+    //   alt: "Man in blue cap",
+    //   tall: false,
+    // },
     {
       src: agbadaImage,
       alt: "Regular wear styling",
