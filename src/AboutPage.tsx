@@ -106,9 +106,9 @@ const AboutPage: React.FC = () => {
           {/* 3 pillars */}
           <div className="grid md:grid-cols-3 gap-6 mt-10">
             {[
-              { icon: "🧵", title: "Design & Production", desc: "We design and produce Afro-western clothing and handmade African accessories — partly manufactured in Nigeria and brought to life in Manchester." },
-              { icon: "🛍️", title: "Retail & Online Sales", desc: "Our pieces are sold in the UK through online platforms and direct retail. Every item is curated for those who wear culture with intention." },
-              { icon: "✂️", title: "Tailoring & Cleaning", desc: "We offer professional tailoring, garment alteration, and commercial cleaning services — extending the life and dignity of every garment." },
+              { icon: "🧵", title: "Design & Production", desc: "We design and produce Afro-western clothing and handmade African accessories — manufactured mainly in Nigeria and brought to life in Manchester." },
+              { icon: "🛍️", title: "Retail & Online Sales", desc: "Our pieces are sold globally through online platforms and direct retail. Every item is curated for those who wear culture with intention." },
+              { icon: "✂️", title: "Tailoring & Alterations", desc: "We offer professional tailoring and garment alteration services — extending the life and dignity of every garment." },
             ].map((p) => (
               <div key={p.title} className="border p-8 transition-colors hover:bg-[#1a1a1a] cursor-default"
                 style={{ borderColor: "#222", borderTop: `4px solid #ffad5b` }}>
@@ -122,10 +122,10 @@ const AboutPage: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-12 mt-14 items-center">
             <div>
               <p className="text-sm text-gray-400 leading-loose font-normal mb-4">
-                <strong style={{ color: "#ffad5b" }}>Xtraordinary Blend Ltd</strong> sits at the intersection of cultural pride and contemporary fashion. We design, produce, and sell Afro-western clothing and handmade African accessories, manufactured partly in Nigeria and sold across the UK and globally.
+                <strong style={{ color: "#ffad5b" }}>Xtraordinary Blend Ltd</strong> sits at the intersection of cultural pride and contemporary fashion. We design, produce, and sell Afro-western clothing and handmade African accessories, manufactured mainly in Nigeria and sold globally.
               </p>
               <p className="text-sm text-gray-400 leading-loose font-normal">
-                Beyond clothing, we serve as a full garment service — tailoring, altering, and cleaning pieces to keep your wardrobe exceptional. Whether it's a first commission or a returning alteration, every interaction is handled with the same care and expertise.
+                Beyond clothing, we serve as a full garment service — tailoring and altering pieces to keep your wardrobe exceptional. Whether it's a first commission or a returning alteration, every interaction is handled with the same care and expertise.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-px" style={{ background: "#222" }}>

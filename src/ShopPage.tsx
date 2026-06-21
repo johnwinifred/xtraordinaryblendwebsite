@@ -2,54 +2,54 @@ import React, { useState, useMemo, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 // Vintage Shirt Series
-import vintageShirt1 from "./assets/Vintage shirt1.jpeg";
-import vintageShirt1_1 from "./assets/Vintage shirt 1.1.jpeg";
-import vintageShirt2 from "./assets/Vintage shirt 2.jpeg";
-import vintageShirt2_1 from "./assets/Vintage shirt2.1.jpeg";
+// import vintageShirt1 from "./assets/Vintage shirt1.jpeg";
+// import vintageShirt1_1 from "./assets/Vintage shirt 1.1.jpeg";
+// import vintageShirt2 from "./assets/Vintage shirt 2.jpeg";
+// import vintageShirt2_1 from "./assets/Vintage shirt2.1.jpeg";
 
-// VS Series (Casual Wear)
-import vs3Image from "./assets/VS 3.jpeg";
-import vs3_1Image from "./assets/VS3.1.jpeg";
-import vs4Image from "./assets/vs4.jpeg";
-import vs4_1Image from "./assets/vs4.1.jpeg";
-import vs5Image from "./assets/vs5.jpeg";
-import vs5_1Image from "./assets/vs5.1.jpeg";
-import vs6Image from "./assets/vs6.jpeg";
-import vs6_1Image from "./assets/vs6.1.jpeg";
-import vs7Image from "./assets/vs7.jpeg";
-import vs7_1Image from "./assets/vs7.1.jpeg";
-import vs8Image from "./assets/vs8.jpeg";
-import vs8_1Image from "./assets/vs8.1.jpeg";
-import vs9Image from "./assets/vs9.jpeg";
-import vs9_1Image from "./assets/vs9.1.jpeg";
-import vs10Image from "./assets/vs10.jpeg";
-import vs10_1Image from "./assets/vs10.1.jpeg";
-import vs11Image from "./assets/vs11.jpeg";
-import vs11_1Image from "./assets/vs11.1.jpeg";
-import vs12Image from "./assets/vs12.jpeg";
-import vs12_1Image from "./assets/vs12.1.jpeg";
-import vs13Image from "./assets/vs13.jpeg";
-import vs13_1Image from "./assets/vs13.1.jpeg";
-import vs14Image from "./assets/vs14.jpeg";
-import vs14_1Image from "./assets/vs14.1.jpeg";
-import vs15Image from "./assets/vs15.jpeg";
-import vs15_1Image from "./assets/vs15.1.jpeg";
-import vs16Image from "./assets/vs16.jpeg";
-import vs16_1Image from "./assets/vs16.1.jpeg";
-import vs17Image from "./assets/vs 17.jpeg";
-import vs17_1Image from "./assets/vs 17.1.jpeg";
-import vs18Image from "./assets/vs 18.jpeg";
-import vs18_1Image from "./assets/vs 18.1.jpeg";
-import vs19Image from "./assets/vs19.jpeg";
-import vs19_1Image from "./assets/vs19.1.jpeg";
-import vs20Image from "./assets/vs20.jpeg";
-import vs20_1Image from "./assets/vs20.1.jpeg";
+// // VS Series (Casual Wear)
+// import vs3Image from "./assets/VS 3.jpeg";
+// import vs3_1Image from "./assets/VS3.1.jpeg";
+// import vs4Image from "./assets/vs4.jpeg";
+// import vs4_1Image from "./assets/vs4.1.jpeg";
+// import vs5Image from "./assets/vs5.jpeg";
+// import vs5_1Image from "./assets/vs5.1.jpeg";
+// import vs6Image from "./assets/vs6.jpeg";
+// import vs6_1Image from "./assets/vs6.1.jpeg";
+// import vs7Image from "./assets/vs7.jpeg";
+// import vs7_1Image from "./assets/vs7.1.jpeg";
+// import vs8Image from "./assets/vs8.jpeg";
+// import vs8_1Image from "./assets/vs8.1.jpeg";
+// import vs9Image from "./assets/vs9.jpeg";
+// import vs9_1Image from "./assets/vs9.1.jpeg";
+// import vs10Image from "./assets/vs10.jpeg";
+// import vs10_1Image from "./assets/vs10.1.jpeg";
+// import vs11Image from "./assets/vs11.jpeg";
+// import vs11_1Image from "./assets/vs11.1.jpeg";
+// import vs12Image from "./assets/vs12.jpeg";
+// import vs12_1Image from "./assets/vs12.1.jpeg";
+// import vs13Image from "./assets/vs13.jpeg";
+// import vs13_1Image from "./assets/vs13.1.jpeg";
+// import vs14Image from "./assets/vs14.jpeg";
+// import vs14_1Image from "./assets/vs14.1.jpeg";
+// import vs15Image from "./assets/vs15.jpeg";
+// import vs15_1Image from "./assets/vs15.1.jpeg";
+// import vs16Image from "./assets/vs16.jpeg";
+// import vs16_1Image from "./assets/vs16.1.jpeg";
+// import vs17Image from "./assets/vs 17.jpeg";
+// import vs17_1Image from "./assets/vs 17.1.jpeg";
+// import vs18Image from "./assets/vs 18.jpeg";
+// import vs18_1Image from "./assets/vs 18.1.jpeg";
+// import vs19Image from "./assets/vs19.jpeg";
+// import vs19_1Image from "./assets/vs19.1.jpeg";
+// import vs20Image from "./assets/vs20.jpeg";
+// import vs20_1Image from "./assets/vs20.1.jpeg";
 
-// Accessories
-import abiaCap1Image from "./assets/abia cap1.jpeg";
-import abiaCap2Image from "./assets/abia cap2.jpeg";
-import redTonak from "./assets/red tonak.jpeg";
-import blackTonak from "./assets/black tonak.jpeg";
+// // Accessories
+// import abiaCap1Image from "./assets/abia cap1.jpeg";
+// import abiaCap2Image from "./assets/abia cap2.jpeg";
+// import redTonak from "./assets/red tonak.jpeg";
+// import blackTonak from "./assets/black tonak.jpeg";
 
 // ── Types ───────────────────────────────────────────────────────
 type Category = "all" | "agbada" | "khaftan" | "traditional" | "accessories" | "casual";
@@ -98,36 +98,36 @@ const PRODUCTS: Product[] = [
   // { id: 9, name: "Blue Igbo Hat (Tonak)", category: "accessories", price: 37.99, badge: null, img: capBlueImage },
   
   // Vintage Shirt Series
-  { id: 10, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vintageShirt1, detailImg: vintageShirt1_1, description: "LIMITED EDITIONS" },
-  { id: 11, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vintageShirt2, detailImg: vintageShirt2_1, description: "LIMITED EDITIONS" },
+  // { id: 10, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vintageShirt1, detailImg: vintageShirt1_1, description: "LIMITED EDITIONS" },
+  // { id: 11, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vintageShirt2, detailImg: vintageShirt2_1, description: "LIMITED EDITIONS" },
   
-  // VS Casual Wear Series - Vintage Shirt (Lapel)
-  { id: 12, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs3Image, detailImg: vs3_1Image, description: "LIMITED EDITIONS" },
-  { id: 13, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs4Image, detailImg: vs4_1Image, description: "LIMITED EDITIONS" },
-  { id: 14, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs5Image, detailImg: vs5_1Image, description: "LIMITED EDITIONS" },
-  { id: 15, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs6Image, detailImg: vs6_1Image, description: "LIMITED EDITIONS" },
-  { id: 16, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs7Image, detailImg: vs7_1Image, description: "LIMITED EDITIONS" },
-  { id: 17, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs8Image, detailImg: vs8_1Image, description: "LIMITED EDITIONS" },
-  { id: 18, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs9Image, detailImg: vs9_1Image, description: "LIMITED EDITIONS" },
-  { id: 19, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs10Image, detailImg: vs10_1Image, description: "LIMITED EDITIONS" },
-  { id: 20, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs11Image, detailImg: vs11_1Image, description: "LIMITED EDITIONS" },
-  { id: 21, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs12Image, detailImg: vs12_1Image, description: "LIMITED EDITIONS" },
-  { id: 22, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs13Image, detailImg: vs13_1Image, description: "LIMITED EDITIONS" },
-  { id: 23, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs14Image, detailImg: vs14_1Image, description: "LIMITED EDITIONS" },
-  { id: 24, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs15Image, detailImg: vs15_1Image, description: "LIMITED EDITIONS" },
-  { id: 25, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs16Image, detailImg: vs16_1Image, description: "LIMITED EDITIONS" },
-  { id: 26, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs17Image, detailImg: vs17_1Image, description: "LIMITED EDITIONS" },
-  { id: 27, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs18Image, detailImg: vs18_1Image, description: "LIMITED EDITIONS" },
-  { id: 28, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs19Image, detailImg: vs19_1Image, description: "LIMITED EDITIONS" },
-  { id: 29, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs20Image, detailImg: vs20_1Image, description: "LIMITED EDITIONS" },
+  // // VS Casual Wear Series - Vintage Shirt (Lapel)
+  // { id: 12, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs3Image, detailImg: vs3_1Image, description: "LIMITED EDITIONS" },
+  // { id: 13, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs4Image, detailImg: vs4_1Image, description: "LIMITED EDITIONS" },
+  // { id: 14, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs5Image, detailImg: vs5_1Image, description: "LIMITED EDITIONS" },
+  // { id: 15, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs6Image, detailImg: vs6_1Image, description: "LIMITED EDITIONS" },
+  // { id: 16, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs7Image, detailImg: vs7_1Image, description: "LIMITED EDITIONS" },
+  // { id: 17, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs8Image, detailImg: vs8_1Image, description: "LIMITED EDITIONS" },
+  // { id: 18, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs9Image, detailImg: vs9_1Image, description: "LIMITED EDITIONS" },
+  // { id: 19, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs10Image, detailImg: vs10_1Image, description: "LIMITED EDITIONS" },
+  // { id: 20, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs11Image, detailImg: vs11_1Image, description: "LIMITED EDITIONS" },
+  // { id: 21, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs12Image, detailImg: vs12_1Image, description: "LIMITED EDITIONS" },
+  // { id: 22, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs13Image, detailImg: vs13_1Image, description: "LIMITED EDITIONS" },
+  // { id: 23, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs14Image, detailImg: vs14_1Image, description: "LIMITED EDITIONS" },
+  // { id: 24, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs15Image, detailImg: vs15_1Image, description: "LIMITED EDITIONS" },
+  // { id: 25, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs16Image, detailImg: vs16_1Image, description: "LIMITED EDITIONS" },
+  // { id: 26, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs17Image, detailImg: vs17_1Image, description: "LIMITED EDITIONS" },
+  // { id: 27, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs18Image, detailImg: vs18_1Image, description: "LIMITED EDITIONS" },
+  // { id: 28, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs19Image, detailImg: vs19_1Image, description: "LIMITED EDITIONS" },
+  // { id: 29, name: "Vintage Shirt (Lapel)", category: "casual", price: 18.00, badge: null, img: vs20Image, detailImg: vs20_1Image, description: "LIMITED EDITIONS" },
   
-  // Accessories - Caps
-  { id: 30, name: "Traditional Abia Hat", category: "accessories", price: 12.00, badge: null, img: abiaCap1Image, description: "Mixed colors - One size" },
-  { id: 31, name: "Traditional Abia Hat", category: "accessories", price: 12.00, badge: null, img: abiaCap2Image, description: "Mixed colors - One size" },
+  // // Accessories - Caps
+  // { id: 30, name: "Traditional Abia Hat", category: "accessories", price: 12.00, badge: null, img: abiaCap1Image, description: "Mixed colors - One size" },
+  // { id: 31, name: "Traditional Abia Hat", category: "accessories", price: 12.00, badge: null, img: abiaCap2Image, description: "Mixed colors - One size" },
   
-  // Accessories - Tonaks
-  { id: 32, name: "Black Igbo Hat (Tonak)", category: "accessories", price: 37.99, badge: null, img: redTonak, description: "Size - 55cm(21.65 inches) x 1\nSize - 56cm(22.05 inches) x 1\nSize - 57cm(22.44 inches) x 1" },
-  { id: 33, name: "Red Igbo Hat (Tonak) - Classic", category: "accessories", price: 37.99, badge: null, img: blackTonak, description: "Size - 55cm(21.65 inches) x 1\nSize - 56cm(22.05 inches) x 1\nSize - 57cm(22.44 inches) x 1" },
+  // // Accessories - Tonaks
+  // { id: 32, name: "Black Igbo Hat (Tonak)", category: "accessories", price: 37.99, badge: null, img: redTonak, description: "Size - 55cm(21.65 inches) x 1\nSize - 56cm(22.05 inches) x 1\nSize - 57cm(22.44 inches) x 1" },
+  // { id: 33, name: "Red Igbo Hat (Tonak) - Classic", category: "accessories", price: 37.99, badge: null, img: blackTonak, description: "Size - 55cm(21.65 inches) x 1\nSize - 56cm(22.05 inches) x 1\nSize - 57cm(22.44 inches) x 1" },
 ];
 
 const FILTERS: { label: string; value: Category }[] = [
