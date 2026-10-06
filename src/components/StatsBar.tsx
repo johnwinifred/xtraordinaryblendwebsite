@@ -1,9 +1,9 @@
 import React from "react";
 
 const stats = [
-  { value: "240+", label: "Bespoke Pieces Sold" },
-  { value: "2", label: "Physical Stores" },
-  { value: "5+", label: "Countries delivered" },
+  { value: "12+", label: "YEARS of fashion-making experience" },
+  { value: "2012", label: "First garment created" },
+  { value: "2014", label: "Xtraordinary Blend established" },
 ];
 
 const StatsBar: React.FC = () => {

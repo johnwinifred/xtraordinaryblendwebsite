@@ -62,11 +62,10 @@ const Footer: React.FC = () => {
             <p className="text-white text-xs font-bold tracking-widest uppercase mb-4">Shop</p>
             <ul className="space-y-2">
               {[
-              { label: "Agbada", filter: "agbada" },
-                { label: "Heritage", filter: "traditional" },
-                { label: "Accessories", filter: "accessories" },
-                { label: "Casual", filter: "casual" },
-                { label: "Custom", filter: "all" },
+                { label: "XKaftan", filter: "agbada" },
+                { label: "Heritage Line", filter: "traditional" },
+                { label: "Afro-Accessories", filter: "accessories" },
+                { label: "Limited Editions", filter: "casual" },
               ].map((item) => (
                 <li key={item.label}>
                   <Link to={`/shop?filter=${item.filter}`} className="text-gray-500 text-xs hover:text-[#ffad5b] transition-colors">

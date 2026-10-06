@@ -1,5 +1,5 @@
 import React from "react";
-import xhftanImage from "./assets/xkhaftan.jfif";
+import founderImage from "./assets/founder.png";
 import beforeImage from "./assets/beforeafter.jfif";
 
 
@@ -103,6 +103,13 @@ const AboutPage: React.FC = () => {
       <section className="py-24 bg-[#111] border-b border-black text-black">
         <div className="max-w-5xl mx-auto px-10">
           <SectionHeader num="02"  title="What We Do" sub="Design, production, and services rooted in Afro-western excellence." light />
+
+          <div className="mb-12 text-gray-400 leading-loose text-sm font-normal">
+            <p>
+              <strong style={{ color: "#ffad5b" }}>Xtraordinary Blend Ltd</strong> sits at the intersection of cultural pride and contemporary fashion. We design, produce, and sell Afro-western clothing and handmade African accessories.
+            </p>
+          </div>
+
           {/* 3 pillars */}
           <div className="grid md:grid-cols-3 gap-6 mt-10">
             {[
@@ -118,38 +125,19 @@ const AboutPage: React.FC = () => {
               </div>
             ))}
           </div>
-          {/* Summary + Stats */}
-          <div className="grid md:grid-cols-2 gap-12 mt-14 items-center">
-            <div>
-              <p className="text-sm text-gray-400 leading-loose font-normal mb-4">
-                <strong style={{ color: "#ffad5b" }}>Xtraordinary Blend Ltd</strong> sits at the intersection of cultural pride and contemporary fashion. We design, produce, and sell Afro-western clothing and handmade African accessories, manufactured mainly in Nigeria and sold globally.
-              </p>
-              <p className="text-sm text-gray-400 leading-loose font-normal">
-                Beyond clothing, we serve as a full garment service — tailoring and altering pieces to keep your wardrobe exceptional. Whether it's a first commission or a returning alteration, every interaction is handled with the same care and expertise.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 gap-px" style={{ background: "#222" }}>
-              {[["240+", "Bespoke Pieces"], ["2", "Continents"], ["4", "Core Services"], ["100%", "Handcrafted"]].map(([v, l]) => (
-                <div key={l} className="bg-black py-8 text-center">
-                  <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "3rem", color: "#fff", display: "block", lineHeight: 1 }}>{v}</span>
-                  <span className="text-xs font-bold tracking-widest uppercase block mt-2" style={{ color: "#ffad5b" }}>{l}</span>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
       {/* ── 3. FOUNDER STORY ── */}
-      <section className="py-24 bg-white border-b border-gray-200">
+      <section id="founder-story" className="py-24 bg-white border-b border-gray-200">
         <div className="max-w-5xl mx-auto px-10">
           <SectionHeader num="03" title="Founder Story" sub="The vision, the voice, the reason behind every stitch." />
           <div className="grid md:grid-cols-5 gap-16 mt-10">
             {/* Image */}
             <div className="md:col-span-2 relative">
               <img
-                src={xhftanImage}
-                alt="Founder of Xblendix"
+                src={founderImage}
+                alt="Founder of Xtraordinary Blend"
                 className="w-full object-cover object-top block"
                 style={{ aspectRatio: "3/4", filter: "grayscale(15%)" }}
               />
