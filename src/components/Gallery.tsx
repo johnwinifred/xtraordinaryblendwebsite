@@ -2,13 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import heritageLineImage from "../assets/Vintage shirt 1.1.jpeg";
 // import heritageImage from "../assets/heritage.jfif";
-import khaftanImage from "../assets/xhaftan2.jfif";
-// import capBlueImage from "../assets/capblue.jfif";
+// n// import capBlueImage from "../assets/capblue.jfif";
 // import regularImage from "../assets/regular.jfif";
 // import xhaftanImage from "../assets/abia cap2.jpeg";
 // import VintageImage from "../assets/Vintage shirt 2.jpeg";
 import agbadaImage from "../assets/agbada.jpg";
-import founderImage from "../assets/founder.png";
+import founderImage from "../assets/founder.jpeg";
 const Gallery: React.FC = () => {
   const images = [
     // {
@@ -54,8 +53,10 @@ const Gallery: React.FC = () => {
         </h2>
 
         <div className="text-center mb-10">
-          <p className="text-[#f5f2ec] font-serif leading-none mb-2" style={{ fontSize: "clamp(2rem, 5vw, 4rem)" }}>
-            Chijioke Anthony Udorji
+          <p className="text-[#f5f2ec] text-2xl font-serif leading-none mb-2">
+            <a href="https://www.linkedin.com/in/chijioke-udorji-a0a487aa/" target="_blank" rel="noreferrer" className="transition-colors hover:text-[#ffad5b] active:text-[#ffad5b] focus-visible:text-[#ffad5b]">
+              Chijioke Anthony Udorji
+            </a>
           </p>
           <p className="text-[#ffad5b] text-sm md:text-base tracking-[0.18em] uppercase">
             Founder • Fashion Designer • Tailor

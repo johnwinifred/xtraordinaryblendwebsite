@@ -1,5 +1,5 @@
 import React from "react";
-import heritageImage from "../assets/heritage line.jfif";
+import heritageImage from "../assets/heroimage.jpeg";
 import { Link } from "react-router-dom";
 
 const Hero: React.FC = () => {
@@ -26,23 +26,18 @@ const Hero: React.FC = () => {
 
         {/* Heading */}
         <h1 className="text-white font-serif mb-3" style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)", lineHeight: 1.05 }}>
-          Bespoke
+          Rooted in Heritage.
         </h1>
         <h2
-          className="font-serif italic mb-6"
+          className="font-serif italic mb-10"
           style={{
             fontSize: "clamp(2.5rem, 6vw, 4.5rem)",
             lineHeight: 1.05,
             color: "#ffad5b",
           }}
         >
-          African Couture
+          Made for Today.
         </h2>
-
-        {/* Subtext */}
-        <p className="text-gray-300 text-sm leading-relaxed max-w-sm mx-auto mb-10">
-          Crafted for the man who needs presence. An extraordinary blend of african and modern designs.
-        </p>
 
         {/* CTA */}
         <Link to="/shop" className="inline-flex items-center gap-3 bg-[#ffad5b] text-black text-xs font-bold tracking-widest uppercase px-6 py-3.5 hover:bg-[#b8973e] transition-colors">

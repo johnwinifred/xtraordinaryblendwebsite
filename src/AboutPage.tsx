@@ -1,6 +1,6 @@
 import React from "react";
-import founderImage from "./assets/founder.png";
-import beforeImage from "./assets/beforeafter.jfif";
+import founderImage from "./assets/founder.jpeg";
+import beforeImage from "./assets/foundercarousel.jpeg";
 
 
 const SectionHeader = ({
@@ -52,7 +52,7 @@ const AboutPage: React.FC = () => {
       <section className="py-24 border-b border-gray-200 bg-[#F5F2EC]">
         <div className="max-w-5xl mx-auto px-10">
           <SectionHeader num="01" title="From West Africa to Manchester" sub="A story rooted in culture, colour, and the courage to carry tradition forward." />
-          <div className="grid md:grid-cols-2 gap-16 items-center mt-4">
+          <div className="mt-4">
             {/* Text */}
             <div>
               <p className="text-sm text-gray-600 leading-loose font-light mb-4">
@@ -82,13 +82,14 @@ const AboutPage: React.FC = () => {
                 ))}
               </div>
             </div>
+
             {/* Image */}
-            <div className="relative">
+            <div className="relative mt-12 md:mt-16 w-full">
               <img
                 src={beforeImage}
                 alt="Bespoke African-inspired suit"
-                className="w-full object-cover block"
-                style={{ aspectRatio: "4/5", filter: "grayscale(20%)" }}
+                className="w-full h-auto block"
+                style={{ filter: "grayscale(20%)" }}
               />
               <div className="absolute text-white text-center px-6 py-5" style={{ background: "#ffad5b", bottom: "-1.5rem", left: "-1.5rem" }}>
                 <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "3rem", lineHeight: 1, display: "block" }}>10+</span>
@@ -149,24 +150,17 @@ const AboutPage: React.FC = () => {
             {/* Story */}
             <div className="md:col-span-3">
               <p className="text-xs font-black tracking-widest uppercase mb-5" style={{ color: "#ffad5b" }}>In Their Own Words</p>
-              <blockquote className="italic text-2xl text-black leading-snug mb-8 pl-6 relative" style={{ fontFamily: "Georgia, serif" }}>
-                <span className="absolute left-0 text-6xl leading-none" style={{ color: "#ffad5b", fontFamily: "Georgia, serif", top: "-0.2rem" }}>"</span>
-                Being well-dressed is a visible expression and representation of an art - Chijioke Anthony Udorji 
-                <p className="text-xs font-bold tracking-widest uppercase mt-2" style={{ color: "#ffad5b" }}>Director, Xtraordinary Blend Ltd</p>
+              <blockquote className="text-2xl text-black leading-snug mb-8 pl-6 relative" style={{ fontFamily: "Georgia, serif" }}>
+                <span className="absolute left-0 text-md leading-none" style={{ color: "#000", fontFamily: "Georgia, serif", top: "-0.2rem" }}>"</span>
+                Being well-dressed is a visible expression and representation of an art." <span className="text-[20px]"> — <a href="https://www.linkedin.com/in/chijioke-udorji-a0a487aa/" target="_blank" rel="noreferrer" className="text-inherit transition-colors hover:text-[#ffad5b] active:text-[#ffad5b] focus-visible:text-[#ffad5b]">Chijioke Anthony Udorji</a> <br/> Founder &amp; Director, Xtraordinary Blend Ltd </span> 
               </blockquote>
+
               <div className="space-y-4 text-sm text-gray-500 leading-loose font-light">
-                <p>Growing up surrounded by the colours, patterns, and textures of West African fashion, I was always drawn to the artistry of our people. The way a well-sewn agbada commands a room. The way kente speaks before the wearer does.I wanted to bring that language of fabric into contemporary spaces.</p>
-                <p>When I moved to Manchester, I found a gap. There were people like me in diaspora, professionals, men of culture, who wanted to show up dressed in both worlds. Not choosing between African and Western, but <strong className="text-black">wearing both unapologetically</strong>.</p>
+                <p>My journey in fashion began before 2014. I made my first shirt in 2012, having developed a passion for tailoring under the mentorship of Obinna Iwu, whose craftsmanship, precision and creativity deeply inspired me. While studying at Abia State Polytechnic, I further developed this passion through the Entrepreneurship Education Development Programme, choosing garment making as my area of focus.</p>
+                <p>In 2014, while searching for a name for my growing fashion business, I told my mentor I wanted something “extraordinary.” He reminded me that he valued my creativity and the quality of my work, and suggested I build the name around that word. That conversation gave birth to Xtraordinary Blend. What began as a tailoring business has grown into a vision to blend African heritage with contemporary fashion — celebrating craftsmanship, identity and individuality.</p>
                 <div className="px-4 py-4 my-6 text-sm font-medium leading-relaxed" style={{ background: "#fdf8ee", borderLeft: "4px solid #ffad5b", color: "#555" }}>
-                  That's what Xtraordinary Blend is. It's the bridge. From the artisans in Nigeria who cut the first fabric, to the client in Manchester who walks into the room and owns it.
+                  From one extraordinary idea to a growing global vision, the journey continues. Blending Beyond Ordinary.
                 </div>
-                <p>We started small alterations, a few commissions, word of mouth. But every satisfied client, every perfectly fitted suit, every returned customer confirmed what we believed: <strong className="text-black">there is a market for clothing that honours identity</strong>. And that market deserves excellence.</p>
-                <p>This is a continuation of a legacy — stitched carefully, worn proudly, and built to last.</p>
-              </div>
-              <div className="flex flex-wrap gap-2 mt-6">
-                {["Heritage", "Precision", "Identity", "Excellence", "Community"].map((v) => (
-                  <span key={v} className="bg-black text-white text-xs font-bold tracking-widest uppercase px-3 py-1.5">{v}</span>
-                ))}
               </div>
             </div>
           </div>

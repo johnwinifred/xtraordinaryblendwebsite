@@ -17,12 +17,12 @@ const Craftsmanship: React.FC = () => {
 
       {/* Right: Text */}
       <div className="flex flex-col justify-center px-10 md:px-16 py-16 border-l border-[#222]">
-        <h2 className="text-white font-serif text-3xl md:text-4xl mb-6 leading-tight">
-          HERITAGE 1.0.0
+        <h2 className="text-white font-serif text-xl md:text-3xl mb-6 leading-tight">
+          HERITAGE | IDENTITY | EXPRESSION
         </h2>
-        <p className="text-gray-400 text-sm leading-relaxed mb-10 max-w-md">
+        {/* <p className="text-gray-400 text-sm leading-relaxed mb-10 max-w-md">
           Rooted in Heritage. Made for Today.
-        </p>
+        </p> */}
 
         {/* Tags */}
         <div className="flex gap-6">
